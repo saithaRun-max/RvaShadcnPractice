@@ -33,7 +33,6 @@ const MyCalenderForm = () => {
   const [date, setDate] = useState(new Date("2025-03-01"));
   const [month, setMonth] = useState("");
   const [value, setValue] = useState(formatDate(date));
-  
 
   console.log(value);
 
