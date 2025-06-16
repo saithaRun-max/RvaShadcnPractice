@@ -29,8 +29,6 @@ export default function Home() {
 
       <Astakavarga />
 
-      <LineChart />
-
       <ChartAreaGradient />
 
       <LagnaChart data={chartData} />
