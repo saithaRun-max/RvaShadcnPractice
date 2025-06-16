@@ -1,10 +1,8 @@
 "use client";
 import { Button } from "@/components/ui/button";
-
 import UserPage from "../userComponents/UserPage";
 import Dynamic from "@/userComponents/Dynamic";
 import Astakavarga from "@/userComponents/Astakavarga";
-
 import ChartAreaGradient from "@/userComponents/ChartAreaGradient";
 import LagnaChart from "@/userComponents/LagnaChart";
 import CalenderPicker from "@/userComponents/CalenderPicker";
@@ -14,6 +12,7 @@ import MyBarChart from "@/userComponents/MyBarChart";
 import MyCalender from "@/userComponents/MyCalender";
 import MyCalenderForm from "@/userComponents/MyCalenderForm";
 import MyCalenderFormGpt from "@/userComponents/MyCalenderFormGpt";
+import LineChartInteractive from "@/userComponents/LineChartInteractive";
 
 export default function Home() {
   const chartData = {
@@ -24,26 +23,24 @@ export default function Home() {
   };
 
   return (
-    <div className="flex">
-      <UserPage />
-
-      <Astakavarga />
+    <div className="flex-col">
+      <LineChartInteractive />
 
       <ChartAreaGradient />
 
-      <LagnaChart data={chartData} />
-
-      {/* <LineChartMultiple /> */}
+      <LineChartMultiple />
 
       <LineChartDots />
 
       <MyBarChart />
 
-      {/* <MyCalender />*/}
+      <LagnaChart data={chartData} />
+
+      <Astakavarga />
 
       <MyCalenderForm />
 
-      {/* <MyCalenderFormGpt /> */}
+      <UserPage />
     </div>
   );
 }

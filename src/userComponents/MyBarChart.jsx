@@ -32,7 +32,7 @@ const chartConfig = {
 };
 const MyBarChart = () => {
   return (
-    <Card className="w-[600px]">
+    <Card className="w-[800px] mx-auto my-50 p-4">
       <CardHeader>
         <CardTitle>Bar Chart</CardTitle>
         <CardDescription>January - June 2024</CardDescription>

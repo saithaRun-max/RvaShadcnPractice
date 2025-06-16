@@ -34,9 +34,9 @@ const UserPage = () => {
 
   return (
     <>
-      <div className=" align-middle flex justify-around">
+      <div className="flex mx-120 align-middle">
         <div>
-          <Card className="w-full max-w-sm ">
+          <Card className="w-[300px]  my-20 p-4">
             <CardHeader>
               <CardTitle>Enter Your Details</CardTitle>
             </CardHeader>
@@ -100,7 +100,7 @@ const UserPage = () => {
           </Card>
         </div>
 
-        <div>
+        <div className="ml-20 mt-20">
           {data.map((ele) => (
             <div>
               <h6>{ele.name}</h6>

@@ -39,14 +39,14 @@ const Astakavarga = () => {
   };
 
   return (
-    <div className="mt-50">
+    <div className="w-full max-w-6xl  my-20 p-4 mx-140">
       <h4 className="text-xl font-semibold">Astakavarga</h4>
       <Table className="w-[100px] ">
         <TableHeader>
           <TableRow>
             <TableHead></TableHead>
-            {Astakavargudata.lables.map((value) => (
-              <TableHead>{value}</TableHead>
+            {Astakavargudata.lables.map((value, i) => (
+              <TableHead key={i}>{value}</TableHead>
             ))}
           </TableRow>
         </TableHeader>
@@ -55,8 +55,8 @@ const Astakavarga = () => {
             <TableCell>
               <TableHead>Sun</TableHead>
             </TableCell>
-            {Astakavargudata.data.sun.map((value) => (
-              <TableCell>{value}</TableCell>
+            {Astakavargudata.data.sun.map((value, i) => (
+              <TableCell key={i}>{value}</TableCell>
             ))}
           </TableRow>
           <TableRow>
@@ -64,8 +64,8 @@ const Astakavarga = () => {
               <TableHead>Moon</TableHead>
             </TableCell>
 
-            {Astakavargudata.data.moon.map((value) => (
-              <TableCell>{value}</TableCell>
+            {Astakavargudata.data.moon.map((value, i) => (
+              <TableCell key={i}>{value}</TableCell>
             ))}
           </TableRow>
 
@@ -74,8 +74,8 @@ const Astakavarga = () => {
               <TableHead>Mars</TableHead>
             </TableCell>
 
-            {Astakavargudata.data.mars.map((value) => (
-              <TableCell>{value}</TableCell>
+            {Astakavargudata.data.mars.map((value, i) => (
+              <TableCell key={i}>{value}</TableCell>
             ))}
           </TableRow>
 
@@ -84,8 +84,8 @@ const Astakavarga = () => {
               <TableHead>Mercury</TableHead>
             </TableCell>
 
-            {Astakavargudata.data.mercury.map((value) => (
-              <TableCell>{value}</TableCell>
+            {Astakavargudata.data.mercury.map((value, i) => (
+              <TableCell key={i}>{value}</TableCell>
             ))}
           </TableRow>
 
@@ -94,8 +94,8 @@ const Astakavarga = () => {
               <TableHead>Jupiter</TableHead>
             </TableCell>
 
-            {Astakavargudata.data.jupiter.map((value) => (
-              <TableCell>{value}</TableCell>
+            {Astakavargudata.data.jupiter.map((value, i) => (
+              <TableCell key={i}>{value}</TableCell>
             ))}
           </TableRow>
 
@@ -104,8 +104,8 @@ const Astakavarga = () => {
               <TableHead>Venus</TableHead>
             </TableCell>
 
-            {Astakavargudata.data.venus.map((value) => (
-              <TableCell>{value}</TableCell>
+            {Astakavargudata.data.venus.map((value, i) => (
+              <TableCell key={i}>{value}</TableCell>
             ))}
           </TableRow>
           <TableRow>
@@ -113,8 +113,8 @@ const Astakavarga = () => {
               <TableHead>Saturn</TableHead>
             </TableCell>
 
-            {Astakavargudata.data.saturn.map((value) => (
-              <TableCell>{value}</TableCell>
+            {Astakavargudata.data.saturn.map((value, i) => (
+              <TableCell key={i}>{value}</TableCell>
             ))}
           </TableRow>
           <TableRow>
@@ -122,8 +122,8 @@ const Astakavarga = () => {
               <TableHead>Lagna</TableHead>
             </TableCell>
 
-            {Astakavargudata.data.lagna.map((value) => (
-              <TableCell>{value}</TableCell>
+            {Astakavargudata.data.lagna.map((value, i) => (
+              <TableCell key={i}>{value}</TableCell>
             ))}
           </TableRow>
         </TableBody>

@@ -41,7 +41,7 @@ const chartConfig = {
 };
 const LineChartDots = () => {
   return (
-    <Card className="w-[600px] ">
+    <Card className="w-[800px] max-w-3xl mx-auto mt-60 p-4 h-90">
       <CardHeader>
         <CardTitle>Line Chart - Dots</CardTitle>
         <CardDescription>January - June 2024</CardDescription>

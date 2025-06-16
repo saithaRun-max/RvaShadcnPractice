@@ -1,11 +1,9 @@
 "use client";
-import { TrendingUp } from "lucide-react";
+
 import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -27,7 +25,6 @@ const chartData = [
   { month: "June", value: 214 },
   { month: "July", value: 229 },
   { month: "Auguest", value: 120 },
-  
 ];
 const chartConfig = {
   desktop: {
@@ -42,7 +39,7 @@ const chartConfig = {
 
 const LineChartMultiple = () => {
   return (
-    <Card className="w-[600px]">
+    <Card className="w-[800px] max-w-3xl mx-auto my-20 p-4 h-90">
       <CardHeader>
         <CardTitle>Line Chart - Multiple</CardTitle>
       </CardHeader>
@@ -75,9 +72,6 @@ const LineChartMultiple = () => {
           </LineChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter>
-        <div className="flex w-full items-start gap-2 text-sm"></div>
-      </CardFooter>
     </Card>
   );
 };

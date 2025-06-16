@@ -51,7 +51,7 @@ const data = [
 
 const ChartAreaGradient = () => {
   return (
-    <Card className="w-full max-w-4xl mx-auto p-4 rounded-2xl shadow-md">
+    <Card className="w-full max-w-6xl mx-auto p-4 rounded-2xl shadow-md ">
       <CardHeader>
         <CardTitle className="text-xl">Monthly Revenue</CardTitle>
       </CardHeader>
