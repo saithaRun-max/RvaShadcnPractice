@@ -13,6 +13,7 @@ import MyCalender from "@/userComponents/MyCalender";
 import MyCalenderForm from "@/userComponents/MyCalenderForm";
 import MyCalenderFormGpt from "@/userComponents/MyCalenderFormGpt";
 import LineChartInteractive from "@/userComponents/LineChartInteractive";
+import AreaChartInteractive from "@/userComponents/AreaChartInteractive";
 
 export default function Home() {
   const chartData = {
@@ -24,6 +25,8 @@ export default function Home() {
 
   return (
     <div className="flex-col">
+      <AreaChartInteractive />
+      
       <LineChartInteractive />
 
       <ChartAreaGradient />
