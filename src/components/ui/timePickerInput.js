@@ -1,7 +1,7 @@
 import { Input } from "@/components/ui/input";
 
 import { cn } from "@/lib/utils";
-import React from "react";
+import { useState } from "react";
 import {
   Period,
   TimePickerType,
@@ -26,8 +26,8 @@ const timePickerInput = ({
   onRightFocus,
   ...props
 }) => {
-  const [flag, setFlag] = React.useState(false);
-  const [prevIntKey, setPrevIntKey] = React.useState("0");
+  const [flag, setFlag] = useState(false);
+  const [prevIntKey, setPrevIntKey] = useState("0");
 
   React.useEffect(() => {
     if (flag) {

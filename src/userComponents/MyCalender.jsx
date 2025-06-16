@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import { useState } from "react";
 import { ChevronDownIcon } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
@@ -12,10 +12,9 @@ import {
 } from "@/components/ui/popover";
 import { add, format } from "date-fns";
 
-
 const MyCalender = () => {
-  const [open, setOpen] = React.useState(false);
-  const [date, setDate] = React.useState(undefined);
+  const [open, setOpen] = useState(false);
+  const [date, setDate] = useState(undefined);
   return (
     <div className="flex gap-4">
       <div className="flex flex-col gap-3">
@@ -43,8 +42,8 @@ const MyCalender = () => {
                 setOpen(false);
               }}
               disabled={(date) =>
-                      date > new Date() || date < new Date("1900-01-01")
-                    }
+                date > new Date() || date < new Date("1900-01-01")
+              }
             />
           </PopoverContent>
         </Popover>

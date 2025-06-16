@@ -1,5 +1,5 @@
 "use client";
-import * as React from "react";
+import { useState } from "react";
 import { ChevronDownIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
@@ -20,10 +20,10 @@ import {
 } from "@/components/ui/select";
 
 const MyCalenderFormGpt = () => {
-  const [open, setOpen] = React.useState(false);
-  const [date, setDate] = React.useState(new Date());
-  const [month, setMonth] = React.useState();
-  const [year, setYear] = React.useState();
+  const [open, setOpen] = useState(false);
+  const [date, setDate] = useState(new Date());
+  const [month, setMonth] = useState();
+  const [year, setYear] = useState();
   const months = [
     "Jan",
     "Feb",
