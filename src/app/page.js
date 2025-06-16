@@ -15,9 +15,6 @@ import MyCalender from "@/userComponents/MyCalender";
 import MyCalenderForm from "@/userComponents/MyCalenderForm";
 import MyCalenderFormGpt from "@/userComponents/MyCalenderFormGpt";
 
-
-
-
 export default function Home() {
   const chartData = {
     1: ["Asc", "Sun"],
@@ -28,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="flex">
-      {/* <UserPage />
+      <UserPage />
 
       <Astakavarga />
 
@@ -36,20 +33,19 @@ export default function Home() {
 
       <ChartAreaGradient />
 
-      <LagnaChart data={chartData} /> */}
+      <LagnaChart data={chartData} />
 
       {/* <LineChartMultiple /> */}
 
-      {/* <LineChartDots /> */}
+      <LineChartDots />
 
-      {/* <MyBarChart /> */}
+      <MyBarChart />
 
       {/* <MyCalender />*/}
 
       <MyCalenderForm />
 
       {/* <MyCalenderFormGpt /> */}
-  
     </div>
   );
 }
