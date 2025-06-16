@@ -4,15 +4,22 @@ import { Button } from "@/components/ui/button";
 import UserPage from "../userComponents/UserPage";
 import Dynamic from "@/userComponents/Dynamic";
 import Astakavarga from "@/userComponents/Astakavarga";
-import ChartCopy from "@/userComponents/ChartCopy";
+
 import ChartAreaGradient from "@/userComponents/ChartAreaGradient";
 import LagnaChart from "@/userComponents/LagnaChart";
 import CalenderPicker from "@/userComponents/CalenderPicker";
+import LineChartMultiple from "@/userComponents/LineChartMultiple";
+import LineChartDots from "@/userComponents/LineChartDots";
+import MyBarChart from "@/userComponents/MyBarChart";
+import MyCalender from "@/userComponents/MyCalender";
+import MyCalenderForm from "@/userComponents/MyCalenderForm";
+import MyCalenderFormGpt from "@/userComponents/MyCalenderFormGpt";
+
+
+import timePicker from "@/userComponents/timePicker";
 
 export default function Home() {
-
-
-const chartData = {
+  const chartData = {
     1: ["Asc", "Sun"],
     2: ["Moon"],
     5: ["Mars"],
@@ -20,16 +27,29 @@ const chartData = {
   };
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] ">
-      <UserPage />
+    <div className="flex">
+      {/* <UserPage />
 
-      {/* <Astakavarga /> */}
+      <Astakavarga />
 
-      {/* <ChartCopy /> */}
+      <LineChart />
 
-      {/* <ChartAreaGradient /> */}
+      <ChartAreaGradient />
 
-      {/* <LagnaChart data={chartData} /> */}
+      <LagnaChart data={chartData} /> */}
+
+      {/* <LineChartMultiple /> */}
+
+      {/* <LineChartDots /> */}
+
+      {/* <MyBarChart /> */}
+
+      {/* <MyCalender />*/}
+
+      <MyCalenderForm />
+
+      {/* <MyCalenderFormGpt /> */}
+      {/* <timePicker /> */}
     </div>
   );
 }

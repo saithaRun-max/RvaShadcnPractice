@@ -39,9 +39,9 @@ const Astakavarga = () => {
   };
 
   return (
-    <div className="mt-100">
-      <h2>Astakavarga</h2>
-      <Table className="">
+    <div className="mt-50">
+      <h4 className="text-xl font-semibold">Astakavarga</h4>
+      <Table className="w-[100px] ">
         <TableHeader>
           <TableRow>
             <TableHead></TableHead>
