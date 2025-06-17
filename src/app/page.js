@@ -25,8 +25,8 @@ export default function Home() {
 
   return (
     <div className="flex-col">
-      <AreaChartInteractive />
-      
+      {/* <AreaChartInteractive /> */}
+
       <LineChartInteractive />
 
       <ChartAreaGradient />
