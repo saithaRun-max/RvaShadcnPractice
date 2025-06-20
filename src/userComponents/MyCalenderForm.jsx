@@ -37,7 +37,7 @@ const MyCalenderForm = () => {
   console.log(value);
 
   return (
-    <div className="flex justify-center my-30 ">
+    <div className="flex m-30  ">
       <div className="flex flex-col gap-3">
         <Label htmlFor="date" className="px-1">
           Birth Date

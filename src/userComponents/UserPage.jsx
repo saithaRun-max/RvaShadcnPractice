@@ -34,7 +34,7 @@ const UserPage = () => {
 
   return (
     <>
-      <div className="flex mx-120 align-middle">
+      <div className="flex mx-10 align-middle">
         <div>
           <Card className="w-[300px]  my-20 p-4">
             <CardHeader>

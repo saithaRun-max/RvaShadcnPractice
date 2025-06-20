@@ -1,12 +1,7 @@
 "use client";
 
 import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
@@ -39,12 +34,12 @@ const chartConfig = {
 
 const LineChartMultiple = () => {
   return (
-    <Card className="w-[800px] max-w-3xl mx-auto my-20 p-4 h-90">
+    <Card className="p-1 max-w-5xl mt-10  ">
       <CardHeader>
-        <CardTitle>Line Chart - Multiple</CardTitle>
+        <CardTitle>Line Chart - multiple</CardTitle>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig}>
+        <ChartContainer config={chartConfig} className="w-4xl h-80">
           <LineChart
             accessibilityLayer
             data={chartData}

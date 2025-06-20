@@ -155,7 +155,7 @@ function AreaChartInteractive() {
   });
 
   return (
-    <Card className="p-1 m-20">
+    <Card className="p-1 max-w-5xl">
       <CardHeader className="flex items-center gap-2 space-y-0 border-b py-5 sm:flex-row">
         <div className="grid flex-1 gap-1">
           <CardTitle>Area Chart - Interactive</CardTitle>

@@ -41,13 +41,13 @@ const chartConfig = {
 };
 const LineChartDots = () => {
   return (
-    <Card className="w-[800px] max-w-3xl mx-auto mt-60 p-4 h-90">
+    <Card className="w-full max-w-5xl mt-10 p-4 ">
       <CardHeader>
         <CardTitle>Line Chart - Dots</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig}>
+        <ChartContainer config={chartConfig} className="w-4xl h-80">
           <LineChart
             accessibilityLayer
             data={chartData}

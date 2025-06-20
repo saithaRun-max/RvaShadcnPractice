@@ -1,49 +1,32 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import UserPage from "../userComponents/UserPage";
-import Dynamic from "@/userComponents/Dynamic";
+
+import AreaChartInteractive from "@/userComponents/AreaChartInteractive";
 import Astakavarga from "@/userComponents/Astakavarga";
 import ChartAreaGradient from "@/userComponents/ChartAreaGradient";
-import LagnaChart from "@/userComponents/LagnaChart";
-import CalenderPicker from "@/userComponents/CalenderPicker";
-import LineChartMultiple from "@/userComponents/LineChartMultiple";
+import LagnaChartTopup from "@/userComponents/LagnaChartTopup";
 import LineChartDots from "@/userComponents/LineChartDots";
-import MyBarChart from "@/userComponents/MyBarChart";
-import MyCalender from "@/userComponents/MyCalender";
-import MyCalenderForm from "@/userComponents/MyCalenderForm";
-import MyCalenderFormGpt from "@/userComponents/MyCalenderFormGpt";
 import LineChartInteractive from "@/userComponents/LineChartInteractive";
-import AreaChartInteractive from "@/userComponents/AreaChartInteractive";
+import LineChartMultiple from "@/userComponents/LineChartMultiple";
+import MyBarChart from "@/userComponents/MyBarChart";
+import MyCalenderForm from "@/userComponents/MyCalenderForm";
+import UserPage from "@/userComponents/UserPage";
+import React from "react";
 
 export default function Home() {
-  const chartData = {
-    1: ["Asc", "Sun"],
-    2: ["Moon"],
-    5: ["Mars"],
-    7: ["Jupiter", "Venus"],
-  };
-
   return (
-    <div className="flex-col">
-      {/* <AreaChartInteractive /> */}
+    <div className="w-full">
+      <div className="flex-col align-middle justify-center">
+        <LineChartInteractive />
 
-      <LineChartInteractive />
-
-      <ChartAreaGradient />
-
-      <LineChartMultiple />
-
-      <LineChartDots />
-
-      <MyBarChart />
-
-      <LagnaChart data={chartData} />
-
-      <Astakavarga />
-
-      <MyCalenderForm />
-
-      <UserPage />
+        <ChartAreaGradient />
+        <LineChartMultiple />
+        <LineChartDots />
+        <MyBarChart />
+        <LagnaChartTopup />
+        <Astakavarga />
+        <MyCalenderForm />
+        <UserPage />
+      </div>
     </div>
   );
 }

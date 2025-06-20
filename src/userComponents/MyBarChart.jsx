@@ -32,13 +32,13 @@ const chartConfig = {
 };
 const MyBarChart = () => {
   return (
-    <Card className="w-[800px] mx-auto my-50 p-4">
+    <Card className="p-1 max-w-5xl mt-10  ">
       <CardHeader>
         <CardTitle>Bar Chart</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig}>
+        <ChartContainer config={chartConfig} className="w-4xl h-80">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
@@ -52,13 +52,11 @@ const MyBarChart = () => {
               cursor={false}
               content={<ChartTooltipContent hideLabel />}
             />
-            <Bar dataKey="desktop" fill="#CBC3E3" radius={8} />
+            <Bar dataKey="desktop" fill="#CBC3E3" radius={8}  width="10"/>
           </BarChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter className="flex-col items-start gap-2 text-sm">
-       
-      </CardFooter>
+      <CardFooter className="flex-col items-start gap-2 text-sm"></CardFooter>
     </Card>
   );
 };

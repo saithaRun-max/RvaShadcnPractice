@@ -24,7 +24,7 @@ const housePositions = [
 
 export default function LagnaChart({ data }) {
   return (
-    <div className="grid grid-cols-4 grid-rows-4 gap-2 p-2 max-w-md mx-auto my-20">
+    <div className="grid grid-cols-4 grid-rows-4 gap-2 p-2 max-w-md mt-20">
       {Array.from({ length: 16 }).map((_, idx) => {
         const position = housePositions.find((h) => h.row * 4 + h.col === idx);
         const houseId = position?.id;

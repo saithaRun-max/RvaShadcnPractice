@@ -37,11 +37,10 @@ import { graphData } from "@/lib/constants";
 
 export const description = "An interactive area chart";
 
-
-
 const chartConfig = {
-  visitors: {
-    label: "Visitors",
+  year: {
+    label: "year",
+    value: "year",
   },
   desktop: {
     label: "Desktop",
@@ -54,8 +53,25 @@ const chartConfig = {
 };
 
 const LineChartInteractive = () => {
+  const CustomTooltip = ({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="rounded-md bg-[#ffffff] shadow-md h-14 w-20 p-2">
+          <p className="font-semibold text-md">{label}</p>
+
+          <p className="pt-2  ">
+            {"value"}
+            <span className="font-semibold pl-1">
+              {` ${payload[0].value}`}{" "}
+            </span>
+          </p>
+        </div>
+      );
+    }
+  };
+
   return (
-    <Card className="w-full max-w-6xl mx-auto my-20 p-4">
+    <Card className=" p-1 max-w-5xl ">
       <CardContent>
         <h2 className="text-xl font-semibold mb-4">Line Chart</h2>
         <ChartContainer
@@ -77,23 +93,21 @@ const LineChartInteractive = () => {
             <CartesianGrid strokeDasharray="3 3" />
             {/* <Tooltip viewBox="PolarViewBox" /> */}
 
-            <ChartTooltip
-              content={
-                <ChartTooltipContent
-                  className={"h-8 content-center"}
-                  labelKey="value"
-                  hideIndicator
-                />
-              }
-            />
+            <ChartTooltip content={<CustomTooltip />} />
 
             {/* <ChartTooltip
-                content={
-                  <ChartTooltipContent <ChartTooltipContent labelKey="activities" indicator="line" /> indicator="line" />
-                }
-                cursor={false}
-                defaultIndex={1}
-              /> */}
+              content={
+                <ChartTooltip
+                  content={
+                    <ChartTooltipContent
+                      className={"h-8 content-center"}
+                      labelKey="value"
+                      hideIndicator
+                    />
+                  }
+                />
+              }
+            /> */}
 
             <Area
               type="bump"

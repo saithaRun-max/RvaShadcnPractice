@@ -1,3 +1,5 @@
+import { ChartLine, Grid2x2, Scale3d, Telescope, TimerReset } from "lucide-react";
+
 export const graphData = [
   {
     year: 2001,
@@ -284,3 +286,93 @@ export const graphData = [
     value: -38,
   },
 ];
+
+export const sideNavData = {
+  user: {
+    name: "RVA",
+    email: "m@example.com",
+    // avatar: "/avatars/shadcn.jpg",
+  },
+  teams: [
+    // {
+    //   name: "Acme Inc",
+    //   logo: GalleryVerticalEnd,
+    //   plan: "Enterprise",
+    // },
+    // {
+    //   name: "Acme Corp.",
+    //   logo: AudioWaveform,
+    //   plan: "Startup",
+    // },
+    // {
+    //   name: "Evil Corp.",
+    //   logo: Command,
+    //   plan: "Free",
+    // },
+  ],
+
+  navMain: [
+    {
+      title: "Chart",
+      url: "#",
+      icon: Grid2x2,
+      isActive: true,
+      items: [
+        {
+          title: "History",
+          url: "#",
+        },
+        {
+          title: "Starred",
+          url: "#",
+        },
+        {
+          title: "Settings",
+          url: "#",
+        },
+      ],
+    },
+    {
+      title: "Graphs",
+      url: "#",
+      icon: ChartLine,
+      items: [
+        {
+          title: "Genesis",
+          url: "#",
+        },
+        {
+          title: "Explorer",
+          url: "#",
+        },
+        {
+          title: "Quantum",
+          url: "#",
+        },
+      ],
+    },
+    {
+      title: "Dasha",
+      url: "#",
+      icon: TimerReset,
+      items: [],
+    },
+    {
+      title: "Kp Tables",
+      url: "#",
+      icon: Telescope,
+      items: [],
+    },
+    {
+      title: "Aspects",
+      url: "#",
+      icon: Scale3d,
+      items: [
+        {
+          title: "Introduction",
+          url: "#",
+        },
+      ],
+    },
+  ],
+};

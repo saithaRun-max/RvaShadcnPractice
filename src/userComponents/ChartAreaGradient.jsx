@@ -1,9 +1,6 @@
 "use client";
 
-
 // import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
-
-
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -39,25 +36,26 @@ const chartData = [
 ];
 
 const data = [
-  { month: 'Jan', revenue: 400, desktop: 18, mobile: 80 },
-  { month: 'Feb', revenue: 300, desktop: 16, mobile: 80 },
-  { month: 'Mar', revenue: 500, desktop: 6, mobile: 80} ,
-  { month: 'Apr', revenue: 200, desktop: 18, mobile: 80 },
-  { month: 'May', revenue: 700, desktop: 35, mobile: 80 },
-  { month: 'Jun', revenue: 600, desktop: 18, mobile: 80 },
+  { month: "Jan", revenue: 400, desktop: 18, mobile: 80 },
+  { month: "Feb", revenue: 300, desktop: 16, mobile: 80 },
+  { month: "Mar", revenue: 500, desktop: 6, mobile: 80 },
+  { month: "Apr", revenue: 200, desktop: 18, mobile: 80 },
+  { month: "May", revenue: 700, desktop: 35, mobile: 80 },
+  { month: "Jun", revenue: 600, desktop: 18, mobile: 80 },
 ];
-
-
 
 const ChartAreaGradient = () => {
   return (
-    <Card className="w-full max-w-6xl mx-auto p-4 rounded-2xl shadow-md ">
+    <Card className="w-full max-w-5xl  p-1 rounded-2xl mt-10 ">
       <CardHeader>
         <CardTitle className="text-xl">Monthly Revenue</CardTitle>
       </CardHeader>
       <CardContent className="h-[300px]">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={chartData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+          <AreaChart
+            data={chartData}
+            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          >
             <defs>
               <linearGradient id="colorRevenue" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#4f46e5" stopOpacity={0.8} />
