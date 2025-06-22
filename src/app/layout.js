@@ -6,6 +6,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
+import MyHeader from "@/userComponents/MyHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,8 @@ export default function RootLayout({ children }) {
           </div>
 
           <div className=" w-screen h-screen ">
+            <MyHeader />
+
             <SidebarTrigger />
             <main className="">{children}</main>
           </div>
